@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="dark.css">
+
     <title>Frederik Blais</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
 
                     <h5 style="text-align: center;line-height: 0;">Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
                     </div>
                 </div>
                 
@@ -66,10 +68,9 @@
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More about me</h4>
-                    <p>top txt sdkljofdsj o sfjisdjf jsdkj fikds jkdfjs 
-                    ifjidksol jfdsojf msdikfjdi.</p>
-                    <p>bot tetxt as dsada sd asfasawf wafasfsa
-                    fas af asfasfsafas fasf saf asf as w fqwqg sdgsdgs.</p>
+                    <p>I've been a computer science student for 2 years and plan on going to University
+                        after getting my college degree.</p>
+                    <p>I enjoy everything related to web devloppement, game devloppement and coding in general.</p>
 
 
                 <hr>
@@ -82,8 +83,8 @@
                     <div id="skills">
                         <ul>
                             <li>Python</li>
-                            <li>Django</li>
                             <li>C#</li>
+                            <li>Django</li>
                             <li>Microsoft 365</li>
                         </ul>
 
@@ -98,9 +99,11 @@
 
                 <div class="social-links">
                     <img id="social_img" src="images/socials.png" alt="twitter profile">
-                    <h3>Find me on GitHub and Twitter</h3>
+                    <h3>Find me on GitHub, Linkedin and Twitter</h3>
 
                     <a target="_blank" href="https://github.com/frederikblais"> GitHub: @frederikblais</a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/frederik-blais-a589bb170/"> Linkedin: @frederikblais</a>
                     <br>
                     <a target="_blank" href="https://twitter.com/frederik_blais"> Twitter: @frederik_blais</a>
 
@@ -116,35 +119,41 @@
 
             <div class="post-wrapper">
 
-                <a target="_blank" href="https://github.com/frederikblais/PythonConsoleApps3">
-                    <div class="post">
-                        <img class="thumbnail" src="images/post1.png" alt="post">
-                        <div class="post-preview">
-                            <h6 class="post-title">Python Console App</h6>
-                            <p class="post-intro">Euler’s Number Approximatation Calculator and Quadratic Equation Calculator</p>
+                <div>
+                    <a target="_blank" href="https://github.com/frederikblais/PythonConsoleApps3">
+                        <div class="post">
+                            <img class="thumbnail" src="images/post1.png" alt="post">
+                            <div class="post-preview">
+                                <h6 class="post-title">Python Console App</h6>
+                                <p class="post-intro">Euler’s Number Approximatation Calculator and Quadratic Equation Calculator</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
-                <a target="_blank" href="https://github.com/frederikblais/Django-CRM">
-                    <div class="post">
-                        <img class="thumbnail" src="images/profile.JPG" alt="post">
-                        <div class="post-preview">
-                            <h6 class="post-title">Django CRM</h6>
-                            <p class="post-intro">Django-CRM is a personal project to track client orders</p>
+                <div>
+                    <a target="_blank" href="https://github.com/frederikblais/Django-CRM">
+                        <div class="post">
+                            <img class="thumbnail" src="images/profile.JPG" alt="post">
+                            <div class="post-preview">
+                                <h6 class="post-title">Django CRM</h6>
+                                <p class="post-intro">Django-CRM is a personal project to track client orders</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 
-                <a target="_blank" href="https://github.com/frederikblais/balancer">
-                    <div class="post">
-                        <img class="thumbnail" src="images/post3.png" alt="post">
-                        <div class="post-preview">
-                            <h6 class="post-title">NodeJS Load Balancer</h6>
-                            <p class="post-intro">This Load balancer iterates through 3 node.js server and balance requests amongst them.</p>
+                <div>
+                    <a target="_blank" href="https://github.com/frederikblais/balancer">
+                        <div class="post">
+                            <img class="thumbnail" src="images/post3.png" alt="post">
+                            <div class="post-preview">
+                                <h6 class="post-title">NodeJS Load Balancer</h6>
+                                <p class="post-intro">This Load balancer iterates through 3 node.js server and balance requests amongst them.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -152,9 +161,30 @@
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <a href=""></a>
+			<h3 style="text-align: center;">Get In Touch</h3>
+
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
