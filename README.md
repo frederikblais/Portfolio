@@ -1,3 +1,3 @@
 # Portfolio
 
-http://frederikblais.ca
+http://www.frederikblais.ca
